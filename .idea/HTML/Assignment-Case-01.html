@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 01</title>
+
+    <link rel="stylesheet" href="../lib/normalize.css">
+
+    <style>
+        body{
+            overflow: hidden;
+        }
+
+        body>.main{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        body>.main:first-child{
+            width: 50%;
+            height: 50%;
+            background-color: red;
+            position: absolute;
+        }
+
+        body>.main:nth-child(2){
+            width: 50%;
+            height: 50%;
+            background-color: green;
+            position: absolute;
+            right: 0;
+        }
+
+        body>.main:nth-child(3){
+            width: 50%;
+            height: 50%;
+            background-color: goldenrod;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        body>.main:nth-child(4){
+            width: 50%;
+            height: 50%;
+            background-color: deeppink;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        body>.main>div{
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body>.main>div>div{
+            width: 60px;
+            height: 60px;
+            background-color: maroon;
+            position: absolute;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body>div:nth-child(5){
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            position: absolute;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body>div:nth-child(5)>div{
+            width: 80px;
+            height: 80px;
+            background-color: maroon;
+            border-radius: 100%;
+            position: absolute;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body>.corner_circle{
+            width: 100px;
+            aspect-ratio: 1/1;
+            background: white;
+            position: absolute;
+        }
+
+        body>div:nth-child(6){
+            border-radius: 0 0 360px 0;
+            top: 0;
+        }
+
+        body>div:nth-child(7){
+            border-radius: 0 0 0 360px;
+            top: 0;
+            right: 0;
+        }
+
+        body>div:nth-child(8){
+            border-radius: 0 360px 0 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        body>div:nth-child(9){
+            border-radius: 360px 0 0 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        body>.center-semi{
+            width: 100px;
+            aspect-ratio: 1/1;
+            background: white;
+            position: absolute;
+        }
+
+        body>div:nth-child(10){
+            top: -30px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 0 0 100% 100%;
+        }
+
+        body>div:nth-child(11){
+            bottom: -30px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 100% 100% 0 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div>
+            <div></div>
+        </div>
+    </div>
+
+    <div>
+        <div></div>
+    </div>
+
+    <div class="corner_circle"></div>
+    <div class="corner_circle"></div>
+    <div class="corner_circle"></div>
+    <div class="corner_circle"></div>
+
+    <div class="center-semi"></div>
+    <div class="center-semi"></div>
+
+</body>
+
+</html>
